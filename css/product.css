@@ -1,0 +1,148 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+:root{
+    --main-color: #FC8571;
+    --background-color: #0F1630;
+    --green-color: #999;
+    --white-color: #fff;
+    --main-transition: 0.3s;
+    --main-padding: 65px;
+    --main-box-shadow: 0 4px 8px var(--main-color);
+}
+
+
+
+#product{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.card{
+    height: 400px;
+    width: 24%;
+    margin: 10px 0px;
+    background-color:white;
+    box-shadow:0px 3px 10px 1px  rgb(0 0 0 /.2);
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 10px;
+    position: relative;
+
+}
+.card h2{
+    color:#FC8571;
+    padding: 10px ;
+}
+.card p{
+    padding-top: 20px;
+}
+button{
+    height: 30px;
+    width: 80px;
+    background-color: var(--background-color);
+    color:#FC8571;
+    position:absolute;
+    border-radius: 10px;
+    bottom:20px;
+    left:40%;
+}
+.card img{
+    height: 180px;
+    width: 200px;
+    padding-top: 20px;
+}
+footer{
+    position: relative;
+    bottom: 0px;
+}
+@media(min-width: 768px)and (max-width: 991px){
+    .card{
+      width: 40%;
+    }  
+  }
+@media (max-width:767px) {
+    .card{
+        width: 95%;
+    }
+    
+}
+
+/**************************/
+.win{
+
+
+}
+.window{
+    height: 350px;
+    width: 500px;
+    display:flex;
+   
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(0 0 0 /80%);
+    display:none;
+    position:fixed;
+    top:20%;
+     left:35%;
+     z-index: 100;
+     animation-name: anmi;
+     animation-duration:1s;
+     animation-timing-function: ease-in-out;   
+   
+}
+.form2{
+    height:300px;
+    width: 95%;
+    margin-left: 30px;
+}
+@keyframes anmi{
+0%{
+ top:-20%;
+}
+100%{
+        
+    top:20%;
+ }
+}
+#btn2{
+    position: absolute;
+    top:0px;
+  left:91%;
+  top:-45px;
+  background-color: white;
+  height: 50px;
+  width:50px;
+  font-size: 40px;
+}
+
+@media (max-width:767px) {
+  .window{
+    height: 350px;
+    width: 80%;
+    left:10%;
+  } 
+  #btn2{
+left:86%;
+top:-45px;
+  } 
+  .form2{
+    width: 100%;
+    padding-left: 10px;
+    margin-left: 0px;
+  }
+}
+@media (min-width:768px)and (max-width:991px) {
+  .window{
+    left:20%;
+  }  
+}

@@ -1,0 +1,303 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+:root{
+    --main-color: #FC8571;
+    --background-color: #0F1630;
+    --green-color: #999;
+    --white-color: #fff;
+    --main-transition: 0.3s;
+    --main-padding: 65px;
+    --main-box-shadow: 0 4px 8px var(--main-color);
+}
+
+.nav_bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;  
+    background-color: #0F1630;
+}
+.navbar{ 
+height: 50px;
+width: 95%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo{
+    width: 20%;
+    padding-top:5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo p{
+    color:white;
+}
+.logo span{
+    color:var(--main-color);
+}
+.menu{
+    padding: 8px;
+    border:2px solid #FC8571;
+    border-radius: 8px;
+}
+ .list{
+    width:80%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+     list-style: none;   
+}
+.menu-bar{
+ display:inline-flex;
+  list-style: none;
+ }
+.menu-bar li{
+    padding:10px 10px;
+}
+.menu-bar li a{
+text-decoration: none;
+text-transform: capitalize;
+font-size: 18px;
+font-weight: bold;
+color:white;
+
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fa-align-justify{
+    display: none;
+}
+@media (max-width:767px) {
+  
+    .navbar{
+    width: 90%;
+        }  
+    .menu-bar{
+        height: 400px;
+        width:100%;
+        background-color: rgb(20, 1, 1);
+        opacity: .9;
+        position:absolute;
+        top:68px;
+        left:0px;
+        display: none;
+        z-index: 2000;
+        text-align: center;
+    }
+    .menu-bar li{
+        padding:20px 0px;
+    }
+    .menu:hover .menu-bar{
+        display:inline-block;
+      
+        
+    }
+    .fa-align-justify{
+        color:white;
+        font-size: 20px;
+        display:block;
+    }
+    
+    }
+    .menu-bar li a:hover{
+        color:var(--main-color);
+    }
+    /*********************/
+    .header{
+        height: 600px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+
+    .header::before{
+        content: "";
+            height:500px;
+            width: 100%;
+            background-color:var(--background-color);
+            transform-origin:top right;
+            transform:skewY(5deg);
+            
+            position:absolute;
+            top:-1px;
+            left:-1px;
+            z-index: -1;
+          
+           
+        } 
+        /**********************************************/
+        .contact-us{
+            width: 60%;
+            height: 430px;
+            box-shadow:0px 3px 10px 1px  rgb(0 0 0 /.2);
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .contact-us::after{
+            content: " ";
+            position: absolute;
+            right: -45px;
+            bottom: -1px;
+            height: 120px;
+            width: 45px;
+            background-color: #FC8571;
+            border-radius: 0px 0px 33px 0px;
+        }
+        form{
+            width: 50%;
+        
+        }
+        form h2{
+            padding:20px 20px 5px 20px ;
+            color:var(--main-color);
+            line-height: 1.6;
+            text-transform: capitalize;
+        }
+        form p{
+            color:var(--main-color);  
+            padding:1px 20px 20px 20px;
+            
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         
+        }
+        form input{
+         padding: 20px;
+         margin: 10px;
+            height: 40px;
+            width: 90%;
+            border:none;
+            color:#FC8571;
+            border: 3px solid;
+           border-color:  white  #eee #eee  #eee;
+           border-radius: 10px;
+            
+        }
+        textarea{
+            resize: none;
+            width: 90%;
+            height: 100px;
+            border: none;
+            margin:5px 10px;
+            color:#FC8571;
+            border: 3px solid;
+           border-color:  white  #eee #eee  #eee;
+           border-radius: 10px;
+
+        }
+        input::placeholder{
+            color:#FC8571;
+            
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+input[type="submit"]{
+    height: 50px;
+    padding:0px;
+    color:white;
+    background-color:#FC8571 ;
+    text-align: center;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+/**********************/
+.icons{
+width: 50%;
+
+}
+.icons img{
+    width: 400px;
+    height:200px;
+   position:relative;
+   left:10%;
+   top:50px;
+ 
+}
+.icons .add{
+    padding:70px 0px 0px 140px;
+    width: 90%;
+    height: auto;
+
+
+}
+.add div{
+    padding: 10px;
+    font-size: 20px;
+    color:#FC8571;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.add div i{
+    padding-right: 20px;
+}
+footer{
+    height: 50px;
+    width:100%;
+    background-color: var(--background-color);
+    position: absolute;
+    bottom: 0px;
+    color:white;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media (max-width:767px) {
+.header{
+    height: 1000px;
+}
+.contact-us{
+width: 72%;
+height: 900px;
+
+}
+.icons{
+width: 100%;
+}
+.icons img{
+    width: 200px;
+  position: relative;
+  left:20px;
+}
+.icons .add{
+    padding:50px 0px 10px 0px;
+}
+form{
+        width:100%;
+        order: 2;
+    } 
+    form input{
+        width:90%;
+    } 
+    footer{
+        position: absolute;
+        bottom:-300px;
+    } 
+}
+@media(min-width:768px)and (max-width:991px) {
+    .header{
+        height: 800px;
+    }
+.contact-us{
+    
+    width:80%;
+}
+    .icons img{
+        width:200px;
+        left:0px;
+    }  
+    .icons .add{
+        padding-left: 0px;
+    }
+}
