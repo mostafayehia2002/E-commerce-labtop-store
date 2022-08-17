@@ -98,7 +98,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         display:block;
     }
     
-    }
+    
 .menu{
     padding: 8px;
     border:2px solid #FC8571;
@@ -107,6 +107,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     .menu-bar li a:hover{
         color:var(--main-color);
     }
+}
     /*********************/
     .header{
         height: 600px;
