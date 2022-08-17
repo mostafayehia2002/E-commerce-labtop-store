@@ -139,11 +139,7 @@ color:white;
     .header::before{
         height:600px;
     }
-    .menu{
-    padding: 8px;
-    border:2px solid #FC8571;
-    border-radius: 8px;
-}
+
 .caption{ 
     height:100px;
     width: 95%;
@@ -181,20 +177,27 @@ width: 90%;
 .menu-bar li{
     padding:20px 0px;
 }
+    
 .menu:hover .menu-bar{
     display:inline-block;
   
     
 }
+    
 .fa-align-justify{
     color:white;
     font-size: 20px;
     display:block;
 }
-
+    .menu{
+    padding: 8px;
+    border:2px solid #FC8571;
+    border-radius: 8px;
 }
+
 .menu-bar li a:hover{
     color:var(--main-color);
+}
 }
 /**************************************/
 #about{
