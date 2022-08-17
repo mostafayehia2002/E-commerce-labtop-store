@@ -40,11 +40,7 @@ align-items: center;
 .logo span{
     color:var(--main-color);
 }
-.menu{
-    padding: 8px;
-    border:2px solid #FC8571;
-    border-radius: 8px;
-}
+
  .list{
     width:80%;
     display: inline-flex;
@@ -103,6 +99,11 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     
     }
+.menu{
+    padding: 8px;
+    border:2px solid #FC8571;
+    border-radius: 8px;
+}
     .menu-bar li a:hover{
         color:var(--main-color);
     }
