@@ -41,11 +41,7 @@ align-items: center;
     color:var(--main-color);
   
 }
-.menu{
-    padding: 8px;
-    border:2px solid #FC8571;
-    border-radius: 8px;
-}
+
  .list{
     width:80%;
     display: inline-flex;
@@ -143,6 +139,11 @@ color:white;
     .header::before{
         height:600px;
     }
+    .menu{
+    padding: 8px;
+    border:2px solid #FC8571;
+    border-radius: 8px;
+}
 .caption{ 
     height:100px;
     width: 95%;
