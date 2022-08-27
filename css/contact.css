@@ -257,7 +257,7 @@ footer{
 }
 @media (max-width:767px) {
 .header{
-    height: 1000px;
+    height: 1400px;
 }
 .contact-us{
 width: 72%;
@@ -284,7 +284,7 @@ form{
     } 
     footer{
         position: absolute;
-        bottom:-300px;
+        bottom:-700px;
     } 
 }
 @media(min-width:768px)and (max-width:991px) {
