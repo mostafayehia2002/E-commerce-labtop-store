@@ -247,8 +247,6 @@ footer{
     height: 50px;
     width:100%;
     background-color: var(--background-color);
-    position: absolute;
-    bottom: 0px;
     color:white;
     text-align: center;
     padding-top: 12px;
@@ -282,10 +280,7 @@ form{
     form input{
         width:90%;
     } 
-    footer{
-        position: absolute;
-        bottom:-700px;
-    } 
+
 }
 @media(min-width:768px)and (max-width:991px) {
     .header{
@@ -302,7 +297,5 @@ form{
     .icons .add{
         padding-left: 0px;
     }
-     footer{
-        bottom: -300px;
-    }
+
 }
