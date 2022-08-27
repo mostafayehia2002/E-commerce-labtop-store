@@ -302,4 +302,7 @@ form{
     .icons .add{
         padding-left: 0px;
     }
+     footer{
+        bottom: -300px;
+    }
 }
