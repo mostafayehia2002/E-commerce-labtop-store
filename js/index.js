@@ -24,6 +24,11 @@ btn[i].onclick=function ff(){
 function method2(){
   window.alert("Congratulations dear, you will receive the product within a day",null);
 }
+function method3(){
+  window.alert("thank you we will contact us with you soon",null);
+}
+
+
 
 // function method(){
 //   if(win.style.display=="none")  {
